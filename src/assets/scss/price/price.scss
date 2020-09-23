@@ -1,0 +1,23 @@
+.price {
+
+  &__num {
+    display: block;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #222222;
+  }
+
+  &__text {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #272622;
+    margin: -5px 0 0;
+  }
+}

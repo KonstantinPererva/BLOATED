@@ -1,0 +1,9 @@
+.header {
+  padding: 12px 15px 28px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

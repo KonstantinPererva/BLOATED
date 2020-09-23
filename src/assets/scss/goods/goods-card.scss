@@ -1,0 +1,122 @@
+.goods-card {
+  background: #FFFFFF;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 0 30px 38px;
+
+  &_simpl {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0 30px;
+
+    .goods-card__title {
+      margin: 0 0 5px;
+    }
+
+    .goods-card__img {
+      position: relative;
+      z-index: 0;
+      margin: -20px 0 -59px;
+    }
+
+    .goods-card__supply {
+      position: relative;
+      z-index: 1;
+    }
+
+    .goods-card__price {
+      position: relative;
+      z-index: 1;
+    }
+
+    .goods-card__button {
+      margin: 0;
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 240px;
+    margin: 0 0 9px;
+
+    & img {
+      display: block;
+      position: relative;
+      z-index: 0;
+    }
+  }
+
+  &__sticker {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #80B918;
+    text-shadow: 2px 3px 0 rgba(58,122,29,1);
+    margin: 0 0 1px;
+  }
+
+  &__supply {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #272622;
+    margin: 0 0 22px;
+  }
+
+  &__price {
+    margin: 0 0 14px;
+  }
+
+  &__save {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D65029;
+    margin: 0 0 19px;
+  }
+
+  &__button {
+    text-align: center;
+    margin: 0 0 12px;
+  }
+
+  &__offer {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #222222;
+    margin: 0 0 20px;
+  }
+
+  &__mark {
+    color: #F46036;
+  }
+
+  &__pay {
+
+  }
+}

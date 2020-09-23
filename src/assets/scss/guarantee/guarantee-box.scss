@@ -1,0 +1,26 @@
+.guarantee-box {
+  background: #fff;
+  padding: 54px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+
+  &__ico {
+    flex-shrink: 0;
+    margin: 0 13px 0 0;
+
+    & img {
+      margin: 0 0 0 -15px;
+    }
+  }
+
+  &__descr {
+    flex-grow: 1;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+  }
+}

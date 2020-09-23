@@ -1,0 +1,22 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-2 {
+    & > * {
+      @include grid (2, 30px, 30px);
+    }
+  }
+
+  &-3 {
+    & > * {
+      @include grid (3, 30px, 30px);
+    }
+  }
+
+  &-4 {
+    & > * {
+      @include grid (4, 30px, 30px);
+    }
+  }
+}

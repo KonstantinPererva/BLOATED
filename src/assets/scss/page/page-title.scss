@@ -1,0 +1,15 @@
+.page-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #80B918;
+  text-shadow: 3px 4px 3px rgba(57,121,28,1);
+  margin: 0 0 9px;
+
+  .section-faq & {
+    margin: 0;
+  }
+}

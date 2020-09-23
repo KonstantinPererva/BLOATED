@@ -1,0 +1,62 @@
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  user-select: none;
+  transition: 150ms;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: transparent;
+  border-radius: 0;
+
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin grid ($cols, $margin-right, $margin-top) {
+  margin-right: $margin-right;
+  width: calc(100% / #{$cols} - #{$margin-right} + #{$margin-right} / #{$cols});
+
+  &:nth-child(#{$cols}n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(#{$cols}n - 1) {
+    margin-right: $margin-right;
+  }
+
+  &:nth-child(n + #{$cols}) {
+    margin-top: 0;
+  }
+
+  &:nth-child(n + #{$cols + 1}) {
+    margin-top: $margin-top;
+  }
+}
