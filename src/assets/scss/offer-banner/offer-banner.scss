@@ -5,6 +5,10 @@
   padding: 15px 15px 13px;
   margin: 52px 0;
 
+  @media (max-width: 992px) {
+    margin: 25px 0;
+  }
+
   &__title {
     display: block;
     font-style: normal;
@@ -64,6 +68,47 @@
        -1px 3px 0 #80B918,
        -0px 3px 0 #80B918
   ;
+
+    @media (max-width: 1200px) {
+      font-size: 60px;
+      line-height: 72px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 50px;
+      line-height: 62px;
+    }
+
+    @media (max-width: 639px) {
+      font-size: 24px;
+      line-height: 30px;
+
+      text-shadow:
+              1px 1px 0 #80B918,
+              1px 0px 0 #80B918,
+
+              -1px 1px 0 #80B918,
+              -1px 0px 0 #80B918,
+
+              1px -1px 0 #80B918,
+              0px -1px 0 #80B918,
+
+              1px 1px 0 #80B918,
+              0px 1px 0 #80B918,
+
+              1px -1px 0 #80B918,
+              1px -0px 0 #80B918,
+
+              -1px -1px 0 #80B918,
+              -1px -0px 0 #80B918,
+
+              -1px -1px 0 #80B918,
+              -0px -1px 0 #80B918,
+
+              -1px 1px 0 #80B918,
+              -0px 1px 0 #80B918
+    ;
+    }
   }
 
   &__subtitle {
@@ -76,5 +121,20 @@
     text-transform: uppercase;
     color: #222222;
     margin: 4px 0 0;
+
+    @media (max-width: 1200px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 639px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }

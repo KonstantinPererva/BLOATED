@@ -30,13 +30,29 @@
       </div>
     </div>
 
-    <div class="page-content">
-      <div class="banner-box">
-        <picture class="banner">
-          <source srcset="assets/img/preview.png" media="(max-width: 767px)">
+<!--  Баннер с картинкой  -->
+<!--    <div class="page-content">-->
+<!--      <div class="banner-box">-->
+<!--        <picture class="banner">-->
+<!--          <source srcset="assets/img/preview.png" media="(max-width: 767px)">-->
 
-          <img src="assets/img/preview.png" alt="banner" />
-        </picture>
+<!--          <img src="assets/img/preview.png" alt="banner" />-->
+<!--        </picture>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <!--  Баннер видео автовоспроизведение  -->
+    <div class="page-content page-content_banner">
+      <div class="banner-box">
+        <div class="banner">
+          <video class="banner-video" id="video-1" autoplay="" loop="" playsinline="playsinline" poster="assets/img/preview.png">
+            <source src="assets/video/udecasi.mp4" type="video/mp4" />
+          </video>
+
+          <div class="btn-play">
+            <img src="assets/img/svg/btn-play.svg" alt="btn" />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -97,7 +113,7 @@
         </div>
 
         <div class="goods-list__item">
-          <div class="goods-card">
+          <div class="goods-card goods-card-central">
             <div class="goods-card__img">
               <img src="assets/img/goods_2.png" alt="goods" />
 
@@ -544,11 +560,19 @@
               <svg width="30" height="48" viewBox="0 0 30 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.66581 25.873L23.0264 47.2332C23.5205 47.7276 24.18 48 24.8832 48C25.5864 48 26.2459 47.7276 26.7399 47.2332L28.313 45.6605C29.3366 44.6357 29.3366 42.9702 28.313 41.947L10.376 24.01L28.3329 6.05302C28.827 5.55859 29.0997 4.89947 29.0997 4.19665C29.0997 3.49305 28.827 2.83393 28.3329 2.3391L26.7598 0.766823C26.2654 0.272388 25.6063 0 24.9031 0C24.1999 0 23.5404 0.272388 23.0463 0.766823L1.66581 22.1466C1.17059 22.6425 0.898594 23.3048 0.900156 24.0088C0.898594 24.7155 1.17059 25.3774 1.66581 25.873Z" fill="#80B918"/>
               </svg>
+
+              <svg class="reviews-slider-button__shadow" width="30" height="48" viewBox="0 0 30 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.66581 25.873L23.0264 47.2332C23.5205 47.7276 24.18 48 24.8832 48C25.5864 48 26.2459 47.7276 26.7399 47.2332L28.313 45.6605C29.3366 44.6357 29.3366 42.9702 28.313 41.947L10.376 24.01L28.3329 6.05302C28.827 5.55859 29.0997 4.89947 29.0997 4.19665C29.0997 3.49305 28.827 2.83393 28.3329 2.3391L26.7598 0.766823C26.2654 0.272388 25.6063 0 24.9031 0C24.1999 0 23.5404 0.272388 23.0463 0.766823L1.66581 22.1466C1.17059 22.6425 0.898594 23.3048 0.900156 24.0088C0.898594 24.7155 1.17059 25.3774 1.66581 25.873Z" fill="#3A7A1D"/>
+              </svg>
             </span>
 
             <span class="reviews-slider-button button-reviews-next">
               <svg width="30" height="48" viewBox="0 0 30 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.3341 22.127L6.97346 0.766823C6.47942 0.272388 5.81991 0 5.1167 0C4.41348 0 3.75398 0.272388 3.25993 0.766823L1.68687 2.33949C0.663271 3.36427 0.663271 5.02981 1.68687 6.05302L19.6239 23.99L1.66697 41.947C1.17292 42.4414 0.900146 43.1005 0.900146 43.8034C0.900146 44.507 1.17292 45.1661 1.66697 45.6609L3.24003 47.2332C3.73446 47.7276 4.39358 48 5.0968 48C5.80001 48 6.45952 47.7276 6.95356 47.2332L28.3341 25.8534C28.8293 25.3575 29.1013 24.6952 29.0997 23.9912C29.1013 23.2845 28.8293 22.6226 28.3341 22.127Z" fill="#80B918"/>
+              </svg>
+
+              <svg class="reviews-slider-button__shadow" width="30" height="48" viewBox="0 0 30 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.3341 22.127L6.97346 0.766823C6.47942 0.272388 5.81991 0 5.1167 0C4.41348 0 3.75398 0.272388 3.25993 0.766823L1.68687 2.33949C0.663271 3.36427 0.663271 5.02981 1.68687 6.05302L19.6239 23.99L1.66697 41.947C1.17292 42.4414 0.900146 43.1005 0.900146 43.8034C0.900146 44.507 1.17292 45.1661 1.66697 45.6609L3.24003 47.2332C3.73446 47.7276 4.39358 48 5.0968 48C5.80001 48 6.45952 47.7276 6.95356 47.2332L28.3341 25.8534C28.8293 25.3575 29.1013 24.6952 29.0997 23.9912C29.1013 23.2845 28.8293 22.6226 28.3341 22.127Z" fill="#3A7A1D"/>
               </svg>
             </span>
           </div>
@@ -568,47 +592,47 @@
       <div class="ref-box">
         <div class="ref-list">
           <div class="ref-list__item">
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3206560/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3206560/</a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3206560/" target="_blank"><span class="link">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3206560/</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315779/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315779/</a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315779/" target="_blank"><span class="link">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315779/</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://doi.org/10.1097/NT.0000000000000167" target="_blank">https://doi.org/10.1097/NT.0000000000000167</a>
+            <a href="https://doi.org/10.1097/NT.0000000000000167" target="_blank"><span class="link">https://doi.org/10.1097/NT.0000000000000167</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/27194235/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/27194235/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/27194235/" target="_blank"><span class="link">https://pubmed.ncbi.nlm.nih.gov/27194235/</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/31763211/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/31763211/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/31763211/" target="_blank"><span class="link">https://pubmed.ncbi.nlm.nih.gov/31763211/</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6358997/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6358997/</a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6358997/" target="_blank"><span class="link">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6358997/</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3236515/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3236515/</a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3236515/" target="_blank"><span class="link">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3236515/</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/30661699/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/30661699/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/30661699/" target="_blank"><span class="link">https://pubmed.ncbi.nlm.nih.gov/30661699/</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/1852091/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/1852091/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/1852091/" target="_blank"><span class="link">https://pubmed.ncbi.nlm.nih.gov/1852091/</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/7439802/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/7439802/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/7439802/" target="_blank"><span class="link">https://pubmed.ncbi.nlm.nih.gov/7439802/</span></a>
           </div>
 
           <div class="ref-list__item">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/25207649/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/25207649/ <span>- Relationship between vagal tone, cortisol, TNF-alpha, epinephrine and negative affects in Crohn's disease and irritable bowel syndrome</span></a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/25207649/" target="_blank"><span class="link">https://pubmed.ncbi.nlm.nih.gov/25207649/</span> <span class="prompt">- Relationship between vagal tone, cortisol, TNF-alpha, epinephrine and negative affects in Crohn's disease and irritable bowel syndrome</span></a>
           </div>
         </div>
       </div>
@@ -640,11 +664,11 @@
           <div class="footer-hold__button">
             <div class="footer-button-list">
               <div class="footer-button-list__item">
-                <button type="button" class="button-main button-main_transparent">Program Support</button>
+                <button type="button" class="button-main button-main_transparent button-program-support"><span>Program Support</span></button>
               </div>
 
               <div class="footer-button-list__item">
-                <button type="button" class="button-main button-main_transparent">Order Support</button>
+                <button type="button" class="button-main button-main_transparent button-order-support"><span>Order Support</span></button>
               </div>
             </div>
           </div>

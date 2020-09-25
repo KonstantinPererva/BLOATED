@@ -4,4 +4,9 @@
   border-radius: 16px;
   overflow: hidden;
   border: 8px solid #80B918;
+
+  @media (max-width: 639px) {
+    border: 0;
+    border-radius: 0;
+  }
 }

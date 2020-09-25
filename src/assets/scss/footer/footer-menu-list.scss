@@ -1,0 +1,45 @@
+.footer-menu-list {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    margin: 0 32px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 0 5px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 160%;
+    color: #3A7A1D;
+    transition: 150ms;
+    text-decoration: none;
+
+    @media (max-width: 767px) {
+      display: inline-block;
+    }
+
+    &:hover {
+      color: #e8c200;
+    }
+  }
+}

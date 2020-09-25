@@ -1,8 +1,41 @@
 .goods-list {
   padding: 20px 0;
-  margin: 52px 0;
+  margin: 52px auto;
+  max-width: 1152px;
+  width: 100%;
+
+  @media (max-width: 992px) {
+    &.grid {
+      display: block;
+
+      & > * {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 639px) {
+    margin: 25px auto;
+  }
 
   .wr-goods-list & {
     margin: 52px 0 32px;
+
+    @media (max-width: 992px) {
+      margin: 25px 0 10px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:last-child {
+      @media (max-width: 992px) {
+        & .goods-card_simpl {
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }

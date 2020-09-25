@@ -2,13 +2,96 @@
   background: #FFFFFF;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
-  padding: 0 30px 38px;
+  padding: 10px 30px 38px;
+
+  @media (max-width: 992px) {
+    padding: 0 54px 38px;
+    max-width: 440px;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  @media (max-width: 440px) {
+    padding: 10px 20px 28px;
+  }
+
+  &-central {
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    right: -35px;
+    left: -35px;
+    padding: 10px 54px 38px;
+    z-index: 1;
+
+    @media (max-width: 992px) {
+      position: relative;
+      top: auto;
+      right: auto;
+      left: auto;
+      bottom: auto;
+    }
+
+    @media (max-width: 440px) {
+      padding: 10px 20px 28px;
+    }
+
+    & .goods-card__img {
+      height: 250px;
+
+      @media (max-width: 992px) {
+        height: 230px;
+      }
+
+      @media (max-width: 440px) {
+        height: 200px;
+      }
+    }
+
+    & .button-add-to-cart {
+      height: 70px;
+      width: 332px;
+      font-size: 36px;
+
+      @media (max-width: 1200px) {
+        max-width: 332px;
+        height: 60px;
+        min-width: auto;
+        width: 100%;
+        font-size: 30px;
+      }
+
+      @media (max-width: 440px) {
+        font-size: 24px;
+        height: 54px;
+      }
+    }
+
+    & .goods-card__save {
+      margin-bottom: 29px;
+
+      @media (max-width: 992px) {
+        margin: 0 0 19px;
+      }
+    }
+  }
 
   &_simpl {
     background: transparent;
     box-shadow: none;
     border-radius: 0;
     padding: 0 30px;
+
+    @media (max-width: 992px) {
+      padding: 0 54px 38px;
+      max-width: 440px;
+      width: 100%;
+      margin: 0 auto 60px;
+    }
+
+    @media (max-width: 440px) {
+      padding: 0 20px 28px;
+    }
 
     .goods-card__title {
       margin: 0 0 5px;
@@ -38,9 +121,14 @@
   &__img {
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
-    height: 240px;
+    height: 230px;
     margin: 0 0 9px;
+
+    @media (max-width: 440px) {
+      height: 200px;
+    }
 
     & img {
       display: block;
@@ -51,9 +139,14 @@
 
   &__sticker {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 32px;
+    left: -21px;
     z-index: 1;
+
+    @media (max-width: 440px) {
+      top: 10px;
+      left: -10px;
+    }
   }
 
   &__title {
@@ -67,6 +160,11 @@
     color: #80B918;
     text-shadow: 2px 3px 0 rgba(58,122,29,1);
     margin: 0 0 1px;
+
+    @media (max-width: 1200px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
   }
 
   &__supply {
@@ -77,6 +175,11 @@
     text-align: center;
     color: #272622;
     margin: 0 0 22px;
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__price {
@@ -93,6 +196,11 @@
     text-transform: uppercase;
     color: #D65029;
     margin: 0 0 19px;
+
+    @media (max-width: 1200px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__button {
@@ -110,6 +218,11 @@
     text-transform: uppercase;
     color: #222222;
     margin: 0 0 20px;
+
+    @media (max-width: 1200px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   &__mark {

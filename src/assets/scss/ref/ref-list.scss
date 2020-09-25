@@ -1,24 +1,67 @@
 .ref-list {
 
   &__item {
+    position: relative;
+
+    @media (max-width: 992px) {
+      padding: 6px 0;
+    }
+
+    &:before {
+      position: absolute;
+      top: 14px;
+      left: -28px;
+      content: '';
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: rotate(-45deg);
+
+      @media (max-width: 1200px) {
+        top: 12px;
+        left: -26px;
+        width: 10px;
+        height: 10px;
+      }
+    }
     
     & a {
       font-style: normal;
-      font-weight: 900;
       font-size: 24px;
       line-height: 170%;
-      text-decoration: underline;
       color: #FFFFFF;
       transition: 150ms;
+      word-break: break-all;
+
+      @media (max-width: 1200px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 18px;
+        line-height: 140%;
+      }
+
+      @media (max-width: 639px) {
+        font-size: 16px;
+      }
       
       &:hover {
         color: #FFD500;
       }
 
-      & span {
+      & .link {
+        font-weight: 900;
+        text-decoration: underline;
+      }
+
+      & .prompt {
         font-weight: 400;
         text-decoration: none !important;
       }
     }
   }
 }
+

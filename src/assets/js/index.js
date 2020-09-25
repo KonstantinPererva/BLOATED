@@ -1,5 +1,3 @@
-import Swiper from 'swiper';
-
 function initCarousel() {
     var carouselGoods = new Swiper('.reviews-slider-container', {
         loop: true,
@@ -161,4 +159,45 @@ if (document.querySelectorAll('.faq-card').length) {
 
         slide.btn.addEventListener('click', slide.toggle);
     });
+}
+
+if (document.querySelectorAll('.banner-video').length) {
+    function videoController() {
+        var videoPortfolio = document.querySelectorAll('.banner-video');
+
+        Array.prototype.forEach.call(videoPortfolio, function (el) {
+            var btnStartVideo = el.closest('.banner-box').querySelector('.btn-play');
+
+            el.autoplay = true;
+            el.muted = true;
+            el.playsinline = true;
+            el.loop = true;
+            el.volume = 0;
+            el.setAttribute('playsinline', 'playsinline');
+
+            var promise = el.play();
+
+            if (promise !== undefined) {
+                promise.then(function () {
+                    btnStartVideo.classList.remove('active');
+                }).catch(function () {
+                    btnStartVideo.classList.add('active');
+
+                    btnStartVideo.addEventListener('click', function () {
+                        this.classList.remove('active');
+                        el.play();
+                    });
+                });
+            } else {
+                btnStartVideo.classList.add('active');
+
+                btnStartVideo.addEventListener('click', function () {
+                    this.classList.remove('active');
+                    el.play();
+                });
+            }
+        });
+    }
+
+    videoController();
 }

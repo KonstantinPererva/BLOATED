@@ -1,4 +1,8 @@
 .section-reviews {
   padding: 60px 0;
   background: #fff;
+
+  @media (max-width: 639px) {
+    padding: 50px 0 30px;
+  }
 }

@@ -3,4 +3,18 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (max-width: 1200px) {
+    max-width: 992px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 738px;
+  }
+
+  &_banner {
+    @media (max-width: 639px) {
+      padding: 0;
+    }
+  }
 }

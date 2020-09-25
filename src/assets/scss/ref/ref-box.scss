@@ -3,4 +3,9 @@
   box-shadow: 10px 10px 0 0 #80B918;
   border-radius: 16px;
   padding: 24px 68px 30px;
+  margin: 55px 0;
+
+  @media (max-width: 639px) {
+    padding: 24px 15px 30px 40px;
+  }
 }

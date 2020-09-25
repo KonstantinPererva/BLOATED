@@ -1,5 +1,54 @@
 .button-main {
   @include button;
+
+  &_transparent {
+    min-width: 200px;
+    height: 64px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #3A7A1D;
+    transition: 150ms;
+
+    &:hover {
+      &:before {
+        background: rgba(58,122,29,.15);
+      }
+    }
+
+    & span {
+      position: relative;
+      z-index: 3;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 40px;
+      border: 4px solid #80B918;
+      z-index: 2;
+      transition: 150ms;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 3px;
+      bottom: -3px;
+      left: 2px;
+      right: -2px;
+      border-radius: 40px;
+      border: 4px solid #3A7A1D;
+      z-index: 1;
+      transition: 150ms;
+    }
+  }
 }
 
 .button-add-to-cart {
@@ -9,9 +58,32 @@
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
-  line-height: 38px;
+  line-height: 100%;
   color: #FFF;
   padding: 2px 30px 0;
+  background: #fff;
+  border-radius: 35px;
+
+  @media (max-width: 1200px) {
+    min-width: auto;
+    height: 54px;
+    width: 100%;
+    max-width: 310px;
+    font-size: 26px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 332px;
+    height: 60px;
+    min-width: auto;
+    width: 100%;
+    font-size: 30px;
+  }
+
+  @media (max-width: 440px) {
+    font-size: 24px;
+    height: 54px;
+  }
 
   &:before {
     content: "";
@@ -70,5 +142,30 @@
         opacity: 0;
       }
     }
+  }
+}
+
+.btn-play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  width: 92px;
+  height: 92px;
+  cursor: pointer;
+  opacity: .8;
+  transition: 150ms;
+  display: none;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.active {
+    display: block;
+    opacity: .8;
   }
 }
