@@ -6,6 +6,18 @@
   &__item {
     margin: 0 32px 0 0;
 
+    .wr-goods-list & {
+      margin: 0 52px 0 0;
+
+      @media (max-width: 639px) {
+        margin: 0 32px 0 0;
+      }
+
+      @media (max-width: 375px) {
+        margin: 0 20px 0 0;
+      }
+    }
+
     &:last-child {
       margin: 0;
     }

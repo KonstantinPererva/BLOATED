@@ -52,6 +52,7 @@
 }
 
 .button-add-to-cart {
+  position: relative;
   min-width: 310px;
   height: 64px;
   text-transform: uppercase;
@@ -126,10 +127,31 @@
     box-shadow: 0px 3px 0px #F00505, inset 0px -2px 1px rgba(255, 255, 255, 0.5), inset 0px 3px 1px rgba(255, 255, 255, 0.5);
   }
 
-  & span {
+  &__text {
     display: block;
     position: relative;
     z-index: 2;
+  }
+
+  &__ico {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 49px;
+    height: 58px;
+    top: 44%;
+    right: 0;
+
+    @media (max-width: 440px) {
+      width: 42px;
+      height: 48px;
+    }
+
+    & img {
+      display: block;
+      height: 100%;
+      width: auto;
+    }
   }
 
   @media (hover: hover) {
@@ -167,5 +189,9 @@
   &.active {
     display: block;
     opacity: .8;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }

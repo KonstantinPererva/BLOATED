@@ -1,6 +1,10 @@
 .section-main {
   padding: 0 0 50px;
   background-image: url(/assets/img/bg_s_1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-size: 100% ;
+
+  @media (max-width: 768px) {
+    background-image: url(/assets/img/bg_s_1_mob.jpg);
+  }
 }
