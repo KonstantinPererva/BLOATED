@@ -93,22 +93,22 @@
       padding: 0 20px 28px;
     }
 
-    .goods-card__title {
+    & .goods-card__title {
       margin: 0 0 5px;
     }
 
-    .goods-card__img {
+    & .goods-card__img {
       position: relative;
       z-index: 0;
       margin: -20px 0 -71px;
     }
 
-    .goods-card__supply {
+    & .goods-card__supply {
       position: relative;
       z-index: 1;
     }
 
-    .goods-card__price {
+    & .goods-card__price {
       position: relative;
       z-index: 1;
 
@@ -117,11 +117,59 @@
       }
     }
 
-    .goods-card__save {
+    & .goods-card__save {
       margin: 0 0 28px;
     }
 
-    .goods-card__button {
+    & .goods-card__button {
+      margin: 0;
+    }
+  }
+
+  &_singletons {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+
+    & .goods-card__img {
+      position: relative;
+      width: 440px;
+      height: 320px;
+      z-index: 0;
+      margin: 20px 0 71px;
+    }
+
+    & .goods-card__guarantee {
+      position: absolute;
+      width: 148px;
+      height: 148px;
+      bottom: 40px;
+      left: -40px;
+    }
+
+    & .goods-card__title {
+      margin: 0 0 5px;
+    }
+
+    & .goods-card__supply {
+      position: relative;
+      z-index: 1;
+    }
+
+    & .goods-card__price {
+      position: relative;
+      z-index: 1;
+
+      & .price__num {
+        margin: 0 0 3px;
+      }
+    }
+
+    & .goods-card__save {
+      margin: 0 0 28px;
+    }
+
+    & .goods-card__button {
       margin: 0;
     }
   }
