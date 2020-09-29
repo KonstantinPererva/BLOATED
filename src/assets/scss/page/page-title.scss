@@ -26,4 +26,12 @@
   .section-reviews & {
     margin: 0 0 3px;
   }
+
+  .upgrade & {
+    margin: 57px 0 25px;
+
+    @media (max-width: 639px) {
+      margin: 25px 0 25px;
+    }
+  }
 }

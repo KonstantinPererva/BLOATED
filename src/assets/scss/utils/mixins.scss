@@ -60,3 +60,9 @@
     margin-top: $margin-top;
   }
 }
+
+@function sizeIns($margStart, $widthStart) {
+  $margStart: calc(#{$margStart} * 100vw / #{$widthStart});
+
+  @return $margStart;
+}

@@ -8,5 +8,15 @@
   color: #222222;
   max-width: 920px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 22px;
+
+  @media (max-width: 992px) {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

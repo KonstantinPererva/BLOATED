@@ -133,27 +133,51 @@
 
     & .goods-card__img {
       position: relative;
-      width: 440px;
+      max-width: 440px;
+      width: 100%;
       height: 320px;
       z-index: 0;
-      margin: 20px 0 71px;
+      margin: 0 auto 0;
     }
 
     & .goods-card__guarantee {
       position: absolute;
       width: 148px;
       height: 148px;
-      bottom: 40px;
-      left: -40px;
+      bottom: 25px;
+      left: -31px;
+
+      @media (max-width: 767px) {
+        left: -15px;
+        width: 120px;
+        height: 120px;
+      }
     }
 
     & .goods-card__title {
-      margin: 0 0 5px;
+      font-weight: 900;
+      font-size: 64px;
+      line-height: 77px;
+      letter-spacing: 0.03em;
+      margin: 0 0 1px;
+
+      @media (max-width: 767px) {
+        font-size: 42px;
+        line-height: 54px;
+      }
     }
 
     & .goods-card__supply {
-      position: relative;
-      z-index: 1;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      color: #272622;
+      margin: 0 0 8px;
+
+      @media (max-width: 767px) {
+        font-size: 22px;
+        line-height: 27px;
+      }
     }
 
     & .goods-card__price {
@@ -161,16 +185,80 @@
       z-index: 1;
 
       & .price__num {
-        margin: 0 0 3px;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 86px;
+        color: #222222;
+        margin: 0 0 0;
+
+        @media (max-width: 767px) {
+          font-size: 52px;
+          line-height: 66px;
+        }
+      }
+
+      & .price__text {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #272622;
+        margin: -8px 0 20px;
+
+        @media (max-width: 767px) {
+          font-size: 18px;
+          line-height: 22px;
+          margin: -5px 0 15px;
+        }
       }
     }
 
     & .goods-card__save {
-      margin: 0 0 28px;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 38px;
+      color: #D65029;
+      margin: 0 0 3px;
+
+      @media (max-width: 767px) {
+        font-size: 26px;
+      }
     }
 
     & .goods-card__button {
-      margin: 0;
+      margin: 0 0 41px;
+    }
+
+    & .goods-card__pay {
+      margin: 0 0 36px;
+    }
+
+    & .goods-card__offer {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #222222;
+      margin: 0 0 20px;
+
+      @media (max-width: 1200px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      & .goods-card__mark {
+        color: #F46036;
+      }
+
+      & .goods-card__line-through {
+        vertical-align: middle;
+        text-decoration-line: line-through;
+      }
+    }
+
+    @media (max-width: 470px) {
+      & .goods-card__img {
+        height: sizeIns(320, 470);
+      }
     }
   }
 
@@ -270,7 +358,6 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    text-decoration-line: line-through;
     text-transform: uppercase;
     color: #222222;
     margin: 0 0 20px;
