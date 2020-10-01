@@ -1,9 +1,19 @@
 .header {
-  padding: 12px 15px 28px;
+  padding: 17px 15px 23px;
 
   &__logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    flex-grow: 1;
+    margin: 0 0 0 12px;
+
+    @media (max-width: 992px) {
+      margin: 0;
+    }
   }
 }

@@ -48,6 +48,11 @@
       }
     }
 
+    & .goods-card__sticker {
+      width: 108px;
+      height: 108px;
+    }
+
     & .button-add-to-cart {
       height: 70px;
       width: 332px;
@@ -119,6 +124,13 @@
 
     & .goods-card__save {
       margin: 0 0 28px;
+
+      &:empty {
+        @media (max-width: 992px) {
+          height: 0;
+          margin: 0 0 36px;
+        }
+      }
     }
 
     & .goods-card__button {
@@ -142,10 +154,10 @@
 
     & .goods-card__guarantee {
       position: absolute;
-      width: 148px;
-      height: 148px;
-      bottom: 25px;
-      left: -31px;
+      width: 180px;
+      height: 180px;
+      bottom: 8px;
+      left: -38px;
 
       @media (max-width: 767px) {
         left: -15px;
@@ -159,7 +171,7 @@
       font-size: 64px;
       line-height: 77px;
       letter-spacing: 0.03em;
-      margin: 0 0 1px;
+      margin: 5px 0 1px;
 
       @media (max-width: 767px) {
         font-size: 42px;
@@ -217,7 +229,7 @@
       font-size: 32px;
       line-height: 38px;
       color: #D65029;
-      margin: 0 0 3px;
+      margin: 0 0 12px;
 
       @media (max-width: 767px) {
         font-size: 26px;
@@ -238,7 +250,7 @@
       line-height: 24px;
       text-transform: uppercase;
       color: #222222;
-      margin: 0 0 20px;
+      margin: 0 0 36px;
 
       @media (max-width: 1200px) {
         font-size: 14px;
@@ -284,8 +296,10 @@
   &__sticker {
     position: absolute;
     top: 32px;
-    left: -21px;
+    left: 20px;
     z-index: 1;
+    width: 98px;
+    height: 98px;
 
     @media (max-width: 440px) {
       top: 10px;
@@ -366,6 +380,10 @@
       font-size: 14px;
       line-height: 16px;
     }
+  }
+
+  &__line-through {
+    text-decoration: line-through;
   }
 
   &__mark {

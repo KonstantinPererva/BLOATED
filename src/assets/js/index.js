@@ -30,7 +30,9 @@ function initCarousel() {
     });
 }
 
-initCarousel();
+if (document.querySelectorAll('.reviews-slider-container').length) {
+    initCarousel();
+}
 
 // open dropdown block
 
