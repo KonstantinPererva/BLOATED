@@ -26,6 +26,11 @@
     }
   }
 
+  &_ptb {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .header & {
     display: flex;
     justify-content: center;

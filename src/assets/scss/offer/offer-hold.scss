@@ -1,0 +1,98 @@
+.offer-hold {
+  background: #FFFFFF;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 1px 30px 30px;
+  margin: 0 0 30px;
+
+  &_transparent {
+    box-shadow: none;
+    background: transparent;
+    padding: 1px 30px 0;
+    margin: 0;
+
+    & .offer-hold__title {
+      color: #222222;
+      text-shadow: none;
+
+      & .mark {
+        color: #8DB63D;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 370px;
+    height: 340px;
+    margin: -180px auto 30px;
+  }
+
+  &__sticker {
+    position: absolute;
+    bottom: 35px;
+    left: 54px;
+    width: 112px;
+    height: 112px;
+
+    & img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #80B918;
+    text-shadow: 2px 3px 0 #4A782D;
+    margin: 30px 0;
+  }
+
+  &__descr {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #222222;
+    margin: 30px 0;
+
+    & p {
+      margin: 30px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    & .mark {
+      color: #80B918;
+    }
+  }
+
+  &__price {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F46036;
+    margin: 30px 0;
+  }
+
+  &__info-addition {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #3A7A1D;
+    margin: 30px 0;
+  }
+}

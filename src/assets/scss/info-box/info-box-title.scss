@@ -4,4 +4,18 @@
   font-size: 40px;
   line-height: 48px;
   color: #FFFFFF;
+
+  &_sm {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  &__text {
+    display: block;
+  }
+
+  & .mark {
+    color: #FFD500;
+  }
 }
