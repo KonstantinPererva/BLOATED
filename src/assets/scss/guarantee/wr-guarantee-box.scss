@@ -1,4 +1,17 @@
 .wr-guarantee-box {
   padding: 124px 0 0;
   margin: 0 0 80px;
+
+  @media (max-width: 1200px) {
+    padding: 104px 0 0;
+  }
+
+  @media (max-width: 992px) {
+    padding: 84px 0 0;
+    margin: 0 0 60px;
+  }
+
+  @media (max-width: 992px) {
+    padding: 74px 0 0;
+  }
 }

@@ -1,5 +1,9 @@
 .upgrade {
   &.downsell {
     padding-bottom: 60px;
+
+    @media (max-width: 992px) {
+      padding-bottom: 0;
+    }
   }
 }

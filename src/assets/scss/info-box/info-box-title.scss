@@ -20,7 +20,19 @@
   &_sm {
     font-weight: 600;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 128%;
+
+    @media (max-width: 1200px) {
+      font-size: 27px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 639px) {
+      font-size: 18px;
+    }
   }
 
   &__text {

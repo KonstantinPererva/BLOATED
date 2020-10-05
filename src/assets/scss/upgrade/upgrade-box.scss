@@ -1,4 +1,8 @@
 .upgrade-box {
   padding: 1px 0 70px;
   background: #fff;
+
+  @media (max-width: 639px) {
+    padding: 15px 0 25px;
+  }
 }

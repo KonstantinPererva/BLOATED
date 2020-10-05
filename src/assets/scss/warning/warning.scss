@@ -114,5 +114,9 @@
 
   .downsell & {
     margin: 39px 0 67px;
+
+    @media (max-width: 992px) {
+      margin: 10px 0 60px;
+    }
   }
 }
