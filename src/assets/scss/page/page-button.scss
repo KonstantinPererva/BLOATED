@@ -1,4 +1,8 @@
 .page-button {
   text-align: center;
   margin: 0 0 41px;
+
+  @media (max-width: 639px) {
+    margin: 0 0 20px;
+  }
 }

@@ -2,8 +2,20 @@
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 120%;
   color: #FFFFFF;
+  
+  @media (max-width: 1200px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 639px) {
+    font-size: 20px;
+  }
 
   &_sm {
     font-weight: 600;
