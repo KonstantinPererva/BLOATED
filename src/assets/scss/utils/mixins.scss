@@ -52,6 +52,10 @@
     margin-right: $margin-right;
   }
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   &:nth-child(n + #{$cols}) {
     margin-top: 0;
   }

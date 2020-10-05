@@ -1,5 +1,21 @@
 .tools-list {
-  &__item {
+  justify-content: center;
 
+  @media (max-width: 992px) {
+    &.grid-5 > * {
+      @include grid (3, 30px, 30px);
+    }
+  }
+
+  @media (max-width: 639px) {
+    &.grid-5 > * {
+      @include grid (2, 30px, 30px);
+    }
+  }
+
+  @media (max-width: 440px) {
+    &.grid-5 > * {
+      @include grid (1, 0px, 30px);
+    }
   }
 }
