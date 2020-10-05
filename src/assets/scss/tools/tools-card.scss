@@ -1,0 +1,19 @@
+.tools-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background: #FFD500;
+  box-shadow: 0 18px 20px rgba(0, 0, 0, 0.15), 0 6px 0 #FDC500;
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #272622;
+  text-shadow: 1px 1px 0 #80B918, -1px 1px 0 #80B918, 1px -1px 0 #80B918, -1px -1px 0 #80B918;
+  padding: 10px;
+}

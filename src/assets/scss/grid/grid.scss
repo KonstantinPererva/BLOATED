@@ -19,4 +19,10 @@
       @include grid (4, 30px, 30px);
     }
   }
+
+  &-5 {
+    & > * {
+      @include grid (5, 30px, 30px);
+    }
+  }
 }
