@@ -1,0 +1,15 @@
+.page-text {
+  max-width: 1022px;
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #222222;
+  margin: 26px auto;
+
+  .ty-main-box & {
+    margin: 0 0 67px;
+  }
+}

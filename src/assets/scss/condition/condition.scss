@@ -1,0 +1,14 @@
+.condition {
+  display: flex;
+  padding: 70px 0;
+
+  &__img {
+    flex-shrink: 0;
+    width: 360px;
+    margin: 0 40px 0 0;
+  }
+
+  &__text {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,15 @@
+.info-box {
+  background: #3A7A1D;
+  box-shadow: 10px 10px 0 #80B918;
+  border-radius: 16px;
+  padding: 40px;
+  color: #fff;
+
+  &__item {
+    margin: 0 0 40px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

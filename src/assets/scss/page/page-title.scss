@@ -19,6 +19,10 @@
     line-height: 42px;
   }
 
+  & span {
+    display: block;
+  }
+
   .section-faq & {
     margin: 0;
   }
@@ -56,5 +60,9 @@
       font-size: 32px;
       line-height: 42px;
     }
+  }
+
+  .ty-main-box & {
+    margin: 0 0 17px;
   }
 }

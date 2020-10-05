@@ -1,0 +1,14 @@
+.group-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    flex-shrink: 0;
+    margin: 0 34px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

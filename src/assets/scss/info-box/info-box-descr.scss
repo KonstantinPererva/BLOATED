@@ -1,0 +1,19 @@
+.info-box-descr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+
+  & p {
+    margin: 20px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & strong {
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.condition-descr {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+
+  & .mark {
+    font-weight: 900;
+    color: #80B918;
+  }
+}

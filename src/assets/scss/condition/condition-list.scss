@@ -1,0 +1,56 @@
+.condition-list {
+  margin: 0 0 20px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    min-height: 76px;
+    border-bottom: 2px solid #80B918;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__property {
+    flex-shrink: 0;
+    position: relative;
+    display: block;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    width: 390px;
+    padding: 0 50px 0 0;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 20px;
+      display: block;
+      width: 18px;
+      height: 18px;
+      border-right: 3px solid #DCDD26;
+      border-bottom: 3px solid #DCDD26;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__value {
+    flex-grow: 1;
+    display: block;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: #80B918;
+  }
+}

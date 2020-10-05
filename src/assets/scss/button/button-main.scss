@@ -49,6 +49,13 @@
       transition: 150ms;
     }
   }
+
+  &_tr-big {
+    min-width: 280px;
+    height: 82px;
+    font-size: 28px;
+    line-height: 34px;
+  }
 }
 
 .button-add-to-cart {
@@ -273,6 +280,12 @@
         opacity: 0;
       }
     }
+  }
+
+  &_full {
+    font-size: 52px;
+    line-height: 62px;
+    min-width: 1170px;
   }
 }
 
