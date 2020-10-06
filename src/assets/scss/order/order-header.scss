@@ -1,0 +1,19 @@
+.order-header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    padding: 0 30px 0 10px;
+  }
+
+  &__bottom {
+    height: 40px;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+  }
+}

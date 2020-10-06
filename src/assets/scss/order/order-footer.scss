@@ -1,0 +1,22 @@
+.order-footer {
+  border-top: 1px solid #ddd;
+  padding: 28px 30px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 109.8%;
+    /* identical to box height, or 22px */
+    color: #222222;
+  }
+
+  &__descr {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 109.8%;
+    /* identical to box height, or 18px */
+    color: #222222;
+  }
+}

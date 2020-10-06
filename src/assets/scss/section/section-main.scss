@@ -7,4 +7,8 @@
   @media (max-width: 768px) {
     background-image: url(/assets/img/bg_s_1_mob.jpg);
   }
+
+  &_full {
+    min-height: 100vh;
+  }
 }

@@ -1,0 +1,28 @@
+.order-switch-button {
+  @include button;
+  width: 140px;
+  height: 42px;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 109.8%;
+  /* identical to box height, or 18px */
+  text-align: center;
+  color: #222222;
+
+  &__ico {
+    display: block;
+    margin: 0 8px 0 0;
+
+    & svg {
+      display: block;
+    }
+  }
+  
+  &.active {
+    background: #F5F5F5;
+    box-shadow: inset 4px 4px 7px rgba(0, 0, 0, 0.15);
+  }
+}

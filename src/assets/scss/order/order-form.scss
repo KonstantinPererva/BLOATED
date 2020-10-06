@@ -1,0 +1,14 @@
+.order-form {
+  display: flex;
+
+  &__left {
+    flex-shrink: 0;
+    width: 670px;
+  }
+
+  &__right {
+    flex-shrink: 0;
+    width: 500px;
+    background: #f5f5f5;
+  }
+}
