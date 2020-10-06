@@ -1,10 +1,18 @@
 .order-form {
   display: flex;
 
+  @media (max-width: 1200px) {
+    display: block;
+  }
+
   &__left {
     flex-shrink: 0;
     width: 670px;
     padding: 0 0 30px;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
   }
 
   &__right {
@@ -12,5 +20,9 @@
     width: 500px;
     background: #f5f5f5;
     padding: 0 0 30px;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
   }
 }

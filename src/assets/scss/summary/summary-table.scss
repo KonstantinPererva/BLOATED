@@ -14,6 +14,10 @@
     /* identical to box height, or 18px */
     color: #222222;
 
+    @media (max-width: 639px) {
+      padding: 0 15px;
+    }
+
     &.mark {
       font-weight: 900;
       font-size: 20px;
@@ -23,6 +27,10 @@
     &.strong {
       font-weight: 900;
       font-size: 18px;
+    }
+    
+    & .line-through {
+      text-decoration: line-through;
     }
   }
 

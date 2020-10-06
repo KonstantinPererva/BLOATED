@@ -2,6 +2,10 @@
   border-top: 1px solid #ddd;
   padding: 28px 30px;
 
+  @media (max-width: 639px) {
+    padding: 20px 15px;
+  }
+
   &__title {
     font-style: normal;
     font-weight: 900;
@@ -9,6 +13,7 @@
     line-height: 109.8%;
     /* identical to box height, or 22px */
     color: #222222;
+    margin: 0 0 10px;
   }
 
   &__descr {

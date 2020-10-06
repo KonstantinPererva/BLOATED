@@ -19,6 +19,7 @@
     border-radius: 2px;
     margin: 4px 7px 0 0;
     padding: 0 0 2px;
+    transition: 150ms;
 
     &:after {
       content: '\2713';
@@ -53,8 +54,12 @@
     border: 0;
     background: transparent;
 
-    &:checked + .order-service__indicator:after {
-      opacity: 1;
+    &:checked + .order-service__indicator{
+      border: 1px solid #3A7A1D;
+
+      &:after {
+        opacity: 1;
+      }
     }
   }
 }

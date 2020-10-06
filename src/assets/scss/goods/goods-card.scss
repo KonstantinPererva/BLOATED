@@ -85,11 +85,41 @@
     display: flex;
     justify-content: center;
     padding: 70px 0;
+    margin: 0;
+
+    @media (max-width: 992px) {
+      display: block;
+      padding: 50px 0;
+    }
+
+    @media (max-width: 639px) {
+    }
 
     & .goods-card__img {
       margin: 0 80px 0 0;
       flex-shrink: 0;
       height: auto;
+      max-width: 370px;
+      width: 100%;
+
+      @media (max-width: 992px) {
+        max-width: 260px;
+        margin: 0 auto 40px;
+      }
+    }
+
+    & .goods-card__sticker {
+      width: 148px;
+      height: 148px;
+      position: absolute;
+      top: auto;
+      left: 30px;
+      bottom: 30px;
+
+      @media (max-width: 992px) {
+        width: 90px;
+        height: 90px;
+      }
     }
 
     & .goods-card__sup {
@@ -109,6 +139,11 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       margin: 0 0 3px;
+
+      @media (max-width: 767px) {
+        font-size: 50px;
+        line-height: 60px;
+      }
     }
 
     & .goods-card__subtitle {
@@ -122,21 +157,13 @@
     & .goods-card__save {
       margin: 0 0 14px;
     }
-
-    & .goods-card__sticker {
-      width: 148px;
-      height: 148px;
-      position: absolute;
-      top: auto;
-      left: 30px;
-      bottom: 30px;
-    }
   }
 
   &_big {
     max-width: 440px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
   }
 
   &_simpl {

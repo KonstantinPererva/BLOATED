@@ -10,4 +10,8 @@
   line-height: 109.8%;
   /* identical to box height, or 22px */
   color: #FFFFFF;
+  
+  &:hover, &:focus, &:active {
+    background: #FD6104;
+  }
 }

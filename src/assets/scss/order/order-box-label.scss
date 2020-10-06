@@ -1,12 +1,18 @@
 .order-box-label {
+  position: relative;
+  display: block;
+
   .order-box__row_fields & {
     width: calc(50% - 7.5px);
+
+    @media (max-width: 639px) {
+      width: 100%;
+    }
 
     &:last-child {
       margin: 0;
     }
   }
-
 
   &_2-3 {
     .order-box__row_fields & {
@@ -14,12 +20,24 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      @media (max-width: 639px) {
+        width: 100%;
+
+        & .order-box-label__input {
+          width: calc(100% / 2 - 7.5px);
+        }
+      }
     }
   }
 
   &_1-3 {
     .order-box__row_fields & {
       width: calc(100% / 3 - 7.5px);
+
+      @media (max-width: 639px) {
+        width: 100%;
+      }
     }
   }
 
@@ -30,19 +48,25 @@
 
     & .order-box-label__input {
       width: calc(100% / 2 - 7.5px);
+
+      @media (max-width: 639px) {
+        width: 100%;
+      }
     }
   }
 
   &__title {
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 109.8%;
     /* or 15px */
     color: #222222;
-    margin: 0 0 6px;
+    padding: 17px 0 6px;
   }
 
   &__input {
@@ -56,6 +80,24 @@
       line-height: 40px;
       font-size: 16px;
       padding: 0 15px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 109.8%;
+    /* or 15px */
+    color: #5AA6FF;
+    text-decoration: underline;
+
+    &:hover, &:focus, &:active {
+      color: #5AA6FF;
+      text-decoration: none;
     }
   }
 }
