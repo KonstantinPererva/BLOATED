@@ -94,7 +94,7 @@
     text-align: center;
     color: #222222;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 120%;
     margin: 10px 0 0;
 
     @media (max-width: 1200px) {
@@ -109,6 +109,24 @@
     @media (max-width: 639px) {
       font-size: 16px;
       line-height: 20px;
+    }
+    
+    & .mark {
+      color: #D65029;
+      font-size: 40px;
+      line-height: 120%;
+
+      @media (max-width: 1200px) {
+        font-size: 36px;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 26px;
+      }
+
+      @media (max-width: 639px) {
+        font-size: 20px;
+      }
     }
   }
 
