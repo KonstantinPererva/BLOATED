@@ -1,0 +1,38 @@
+.summary-table {
+
+  &__row {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 109.8%;
+    /* identical to box height, or 18px */
+    color: #222222;
+
+    &.mark {
+      font-weight: 900;
+      font-size: 20px;
+      color: #D85827;
+    }
+
+    &.strong {
+      font-weight: 900;
+      font-size: 18px;
+    }
+  }
+
+  &__property {
+    flex-grow: 1;
+  }
+
+  &__value {
+    flex-shrink: 0;
+    width: 100px;
+    text-align: right;
+  }
+}

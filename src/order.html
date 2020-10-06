@@ -64,6 +64,7 @@
                 <span>Billing Information</span>
               </div>
 
+<!--      switch button        -->
               <div class="order-box__row">
                 <label class="order-box-label">
                   <span class="order-box-label__title">Payment Method</span>
@@ -97,6 +98,7 @@
                   </div>
                 </div>
               </div>
+<!--END-->
 
               <div class="order-box__row">
                 <label class="order-box-label">
@@ -118,16 +120,22 @@
                 </label>
               </div>
 
-              <div class="order-box__row">
-                <label class="order-box-label">
+              <div class="order-box__row order-box__row_fields">
+                <label class="order-box-label order-box-label_2-3">
                   <span class="order-box-label__title">Expiration Date</span>
 
-                  <span class="order-box-label__input">
-                    <input type="text" />
+                  <span class="order-box-label__double">
+                    <span class="order-box-label__input">
+                      <input type="text" />
+                    </span>
+
+                    <span class="order-box-label__input">
+                      <input type="text" />
+                    </span>
                   </span>
                 </label>
 
-                <label class="order-box-label">
+                <label class="order-box-label order-box-label_1-3">
                   <span class="order-box-label__title">Security Code</span>
 
                   <span class="order-box-label__input">
@@ -172,7 +180,7 @@
                 </label>
               </div>
 
-              <div class="order-box__row">
+              <div class="order-box__row order-box__row_fields">
                 <label class="order-box-label">
                   <span class="order-box-label__title">Country</span>
 
@@ -180,9 +188,7 @@
                     <input type="text" />
                   </span>
                 </label>
-              </div>
 
-              <div class="order-box__row">
                 <label class="order-box-label">
                   <span class="order-box-label__title">ZIP or Postal Code</span>
 
@@ -192,7 +198,7 @@
                 </label>
               </div>
 
-              <div class="order-box__row">
+              <div class="order-box__row order-box__row_fields">
                 <label class="order-box-label">
                   <span class="order-box-label__title">City</span>
 
@@ -200,9 +206,7 @@
                     <input type="text" />
                   </span>
                 </label>
-              </div>
 
-              <div class="order-box__row">
                 <label class="order-box-label">
                   <span class="order-box-label__title">State / Province</span>
 
@@ -221,7 +225,90 @@
               </div>
 
               <div class="summary">
+                <div class="summary__title">
+                  <span>CCR Formula - 1 Bottle Special Limited Time Discount</span>
+                </div>
 
+                <div class="summary__img">
+                  <img src="assets/img/detail.png" alt="goods">
+                </div>
+
+                <div class="summary-table">
+                  <div class="summary-table__row mark">
+                    <span class="summary-table__property">Normal Price</span>
+
+                    <span class="summary-table__value">$297.00</span>
+                  </div>
+
+                  <div class="summary-table__row strong">
+                    <span class="summary-table__property">Your Price</span>
+
+                    <span class="summary-table__value">$67.00</span>
+                  </div>
+
+                  <div class="summary-table__row">
+                    <span class="summary-table__property">Subtotal</span>
+
+                    <span class="summary-table__value">$67.00</span>
+                  </div>
+
+                  <div class="summary-table__row">
+                    <span class="summary-table__property">Shipping & Handling</span>
+
+                    <span class="summary-table__value">$17.00</span>
+                  </div>
+
+                  <div class="summary-table__row">
+                    <span class="summary-table__property">Tax</span>
+
+                    <span class="summary-table__value">$0.00</span>
+                  </div>
+
+                  <div class="summary-table__row">
+                    <span class="summary-table__property">TOTAL</span>
+
+                    <span class="summary-table__value">$84.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="order-box">
+              <div class="order-box__title">
+                <span>Recommended for You</span>
+              </div>
+
+              <div class="order-block">
+                <div class="order-service">
+                  <label class="order-service__label">
+                    <input type="checkbox" class="order-service__input" />
+
+                    <span class="order-service__indicator"></span>
+
+                    <span class="order-service__text">Include <strong>Optional Shipping Protection</strong> to my purchase for only $5.00 right now!</span>
+                  </label>
+                </div>
+
+                <div class="order-submit">
+                  <button type="submit" class="button-order-submit">Pay Now</button>
+                </div>
+
+                <div class="secure">
+                  <ul class="secure-list">
+                    <li class="secure-list__item">
+                      <img src="assets/img/secure_1.png" alt="secure" />
+                    </li>
+
+                    <li class="secure-list__item">
+                      <img src="assets/img/secure_2.png" alt="secure" />
+                    </li>
+
+                    <li class="secure-list__item">
+                      <img src="assets/img/secure_3.png" alt="secure" />
+                    </li>
+
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

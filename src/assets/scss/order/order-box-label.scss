@@ -1,6 +1,40 @@
 .order-box-label {
+  .order-box__row_fields & {
+    width: calc(50% - 7.5px);
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+
+  &_2-3 {
+    .order-box__row_fields & {
+      width: calc(100% / 3 * 2 - 7.5px);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &_1-3 {
+    .order-box__row_fields & {
+      width: calc(100% / 3 - 7.5px);
+    }
+  }
+
+  &__double {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    & .order-box-label__input {
+      width: calc(100% / 2 - 7.5px);
+    }
+  }
 
   &__title {
+    width: 100%;
     display: block;
     font-style: normal;
     font-weight: bold;

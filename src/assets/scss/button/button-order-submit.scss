@@ -1,0 +1,13 @@
+.button-order-submit {
+  @include button;
+  height: 48px;
+  width: 100%;
+  background: #D85827;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 109.8%;
+  /* identical to box height, or 22px */
+  color: #FFFFFF;
+}

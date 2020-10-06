@@ -2,6 +2,11 @@
 
   &__row {
     padding: 17px 30px 0;
+
+    &_fields {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__title {
