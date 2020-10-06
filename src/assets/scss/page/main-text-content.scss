@@ -1,0 +1,28 @@
+.main-text-content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  color: #222222;
+
+  & p {
+    margin: 30px 0;
+    
+    & .line-through {
+      text-decoration: line-through;
+    }
+    
+    & .mark {
+      color: #D65029;
+      font-weight: 600;
+    }
+  }
+
+  &__list {
+    & li:nth-child(odd) {
+      & p {
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -81,6 +81,58 @@
     }
   }
 
+  &-horizontal {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+
+    & .goods-card__img {
+      margin: 0 80px 0 0;
+      flex-shrink: 0;
+      height: auto;
+    }
+
+    & .goods-card__sup {
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      color: #222222;
+    }
+
+    & .goods-card__title {
+      color: #fff;
+      font-weight: 900;
+      font-size: 64px;
+      line-height: 77px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin: 0 0 3px;
+    }
+
+    & .goods-card__subtitle {
+      margin: 0 0 12px;
+    }
+
+    & .goods-card__price {
+      margin: 0 0 16px;
+    }
+
+    & .goods-card__save {
+      margin: 0 0 14px;
+    }
+
+    & .goods-card__sticker {
+      width: 148px;
+      height: 148px;
+      position: absolute;
+      top: auto;
+      left: 30px;
+      bottom: 30px;
+    }
+  }
+
   &_simpl {
     background: transparent;
     box-shadow: none;
@@ -272,6 +324,11 @@
         height: sizeIns(320, 470);
       }
     }
+  }
+
+  &_transparent {
+    background: none;
+    box-shadow: none;
   }
 
   &__img {
